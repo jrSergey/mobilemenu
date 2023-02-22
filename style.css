@@ -63,7 +63,7 @@ ul{
     transition: max-height .5s ease-out;
 }
 
-/* Sub nav */
+/* Поднавигация */
 .subnav-content {
     background-color:  var(--white);
     width: 100%;
@@ -78,6 +78,12 @@ ul{
     margin: 10px 0;
     text-align: center;
 }
+
+.subnav-content a:hover {
+    color: var(--white);
+    font-weight: 600;
+}
+
 .subnav:hover .subnav-content {
     display: block;
 }
@@ -160,7 +166,7 @@ ul{
         display: none;
     }
 
-    /* Sub nav */
+    /* Поднавигация */
     .subnav-content {
         padding: 20px 0 ;
         display: none;
@@ -172,12 +178,12 @@ ul{
 }
 
 .Lorem1 {
-    padding: 100px 0px 0px 400px;
-    height: 100%;
-    
+    padding-top: 150px;
+    margin: auto;
+    text-align: center;    
 }
 
 .Lorem1000 {
-    margin: 20px 50px;
+    margin: 20px;
 }
 
