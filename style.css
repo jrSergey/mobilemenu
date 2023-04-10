@@ -7,22 +7,29 @@
     --gray: #85888C;
 } /* Переменные */
 
+
+
 /* Повтор */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: var(--white);
     font-family: "Poppins", sans-serif;
 }
+
 a{
     text-decoration: none;
 }
+
 ul{
     list-style: none;
 }
+
+
 
 /* Зоголовок */
 .header{
@@ -32,6 +39,9 @@ ul{
     top: 0;
     width: 100%;
 }
+
+
+
 /* Логотип */
 .logo{
     display: inline-block;
@@ -40,13 +50,15 @@ ul{
     margin-left: 10px;
 }
 
+
+
 /* Меню навигации */
 .listNav{
     width: 100%;
     height: 100%;
     position: fixed;
     background-color: var(--black);
-    overflow: hidden;
+    overflow: hidden; /* Контент обрезается без предоставления прокрутки */
 
 }
 
@@ -55,15 +67,19 @@ ul{
     padding: 30px;
     color: var(--white);
 }
+
 .menu a:hover{
     background-color: var(--gray);
 }
+
 .listNav{
     max-height: 0;
     transition: max-height .5s ease-out;
 }
 
-/* Sub nav */
+
+
+/* Поднавигация */
 .subnav-content {
     background-color:  var(--white);
     width: 100%;
@@ -71,6 +87,7 @@ ul{
     padding: 20px 0 ;
     display: none;
   }
+
 .subnav-content a {
     color: var(--black);
     text-decoration: none;
@@ -78,9 +95,11 @@ ul{
     margin: 10px 0;
     text-align: center;
 }
+
 .subnav:hover .subnav-content {
     display: block;
 }
+
 
 
 /* Значок меню */
@@ -96,7 +115,6 @@ ul{
     height: 2px;
     position: relative;
     width: 24px;
-
 } /* Диапазон стиля тега */
 
 .hamb-line::before,
@@ -109,9 +127,11 @@ ul{
     transition: all .2s ease-out;
     width: 100%;
 }
+
 .hamb-line::before{
     top: 5px;
 }
+
 .hamb-line::after{
     top: -5px;
 }
@@ -120,25 +140,30 @@ ul{
     display: none;
 } /* Скрыть флажок */
 
+
+
 /* Переключить значок меню */
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
+
 .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
 }
+
 .side-menu:checked ~ .hamb .hamb-line::before {
     transform: rotate(-45deg);
     top:0;
 }
+
 .side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top:0;
 }
 
 
-/* Ответная реакция */
 
+/* Ответная реакция */
 @media (min-width: 768px) {
     .listNav{
         max-height: none;
@@ -148,9 +173,11 @@ ul{
         width: fit-content;
         background-color: transparent;
     }
+
     .menu li{
         float: left;
     }
+
     .menu a:hover{
         background-color: transparent;
         color: var(--gray);
@@ -166,18 +193,23 @@ ul{
         display: none;
         background-color:  var(--black);
     }
+    
     .subnav-content a {
         color: white;
+        display: grid;
     }
 }
 
+
+/*Текст*/
 .Lorem1 {
-    padding: 100px 0px 0px 400px;
+    padding: 30px 0px 0px 400px;
     height: 100%;
     
 }
 
 .Lorem1000 {
     margin: 20px 50px;
+    text-align: justify;
 }
 
