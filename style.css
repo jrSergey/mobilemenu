@@ -77,8 +77,6 @@ ul{
     transition: max-height .5s ease-out;
 }
 
-
-
 /* Поднавигация */
 .subnav-content {
     background-color:  var(--white);
@@ -94,6 +92,11 @@ ul{
     padding: 0;
     margin: 10px 0;
     text-align: center;
+}
+
+.subnav-content a:hover {
+    color: var(--white);
+    font-weight: 600;
 }
 
 .subnav:hover .subnav-content {
@@ -187,7 +190,7 @@ ul{
         display: none;
     }
 
-    /* Sub nav */
+    /* Поднавигация */
     .subnav-content {
         padding: 20px 0 ;
         display: none;
@@ -203,13 +206,12 @@ ul{
 
 /*Текст*/
 .Lorem1 {
-    padding: 30px 0px 0px 400px;
-    height: 100%;
-    
+    padding-top: 150px;
+    margin: auto;
+    text-align: center;    
 }
 
 .Lorem1000 {
-    margin: 20px 50px;
-    text-align: justify;
+    margin: 20px;
 }
 
