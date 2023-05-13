@@ -145,7 +145,7 @@ ul{
 
 
 
-/* Переключить значок меню */
+/* Переключить значок меню на крестик*/
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
@@ -195,10 +195,11 @@ ul{
         padding: 20px 0 ;
         display: none;
         background-color:  var(--black);
+        z-index: 2;
     }
     
     .subnav-content a {
-        color: white;
+        color: var(--white);
         display: grid;
     }
 }
@@ -206,12 +207,16 @@ ul{
 
 /*Текст*/
 .Lorem1 {
+    position: relative;
+    z-index: 1;
     padding-top: 50px;
     margin: auto;
     text-align: center;    
 }
 
 .Lorem1000 {
-    margin: 20px;
+    position: relative;
+    z-index: 1;
+    margin: 20px 300px 20px 100px;
 }
 
